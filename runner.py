@@ -254,9 +254,9 @@ async def run_ddos(
 
         for flooder in tcp_flooders + udp_flooders:
             logger.info(
-                f"{cl.YELLOW}{t('Target')}:{cl.BLUE} %s,"
-                f"{cl.YELLOW} {t('Port')}:{cl.BLUE} %s,"
-                f"{cl.YELLOW} {t('Method')}:{cl.BLUE} %s{cl.RESET}" % flooder.desc
+                f"{cl.white}{t('Target')}:{cl.white} %s,"
+                f"{cl.blue} {t('Port')}:{cl.BLUE} %s,"
+                f"{cl.red} {t('Method')}:{cl.BLUE} %s{cl.RESET}" % flooder.desc
             )
         print()
 
